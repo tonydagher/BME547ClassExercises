@@ -45,8 +45,8 @@ def divide(a, b):
 
 
 inp = input("Input letter to define operation: ")
-num1 = int(input("enter number 1: "))
-num2 = int(input("enter number 2: "))
+num1 = float(input("enter number 1: "))
+num2 = float(input("enter number 2: "))
 print("You entered {}".format(inp))
 if inp == "a":
     d = add(num1, num2)
