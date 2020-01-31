@@ -1,27 +1,4 @@
-"""
-def add(a, b):
-    c = a + b
-    return c, "+"
-
-
-def subtract(a, b):
-    c = a - b
-    return c, "-"
-
-
-def multiply(a, b):
-    c = a * b
-    return c, "*"
-
-
-def divide(a, b):
-    c = a / b
-    return c, "/"
-
-
-a, b = 47, 7
-print("{} {} {} = {}".format(a, add(a,b)[1], b, add(a, b)[0]))
-"""
+import math
 
 
 def add(a, b):
@@ -42,6 +19,11 @@ def multiply(a, b):
 def divide(a, b):
     c = a / b
     return c, "/"
+
+
+def square_root(x):
+    z = math.sqrt(x)
+    return z, "root"
 
 
 inp = input("Input letter to define operation: ")
@@ -56,6 +38,8 @@ elif inp == "m":
     d = multiply(num1, num2)
 elif inp == "d":
     d = divide(num1, num2)
+elif inp == "r":
+    d = square_root(num1)
 else:
     print("The {} command is not recognized.".format(inp))
 
